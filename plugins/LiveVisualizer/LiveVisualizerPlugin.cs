@@ -178,7 +178,7 @@ namespace LiveVisualizer
             var interval = 1500;
             int time = 0;
 
-            if (ppCalculator != null && (playMode == PlayMode.Osu || playMode == PlayMode.Taiko || playMode == PlayMode.OsuMania))
+            if (ppCalculator != null && (playMode == PlayMode.Osu || playMode == PlayMode.Taiko || playMode == PlayMode.OsuMania || playMode == PlayMode.CatchTheBeat))
             {
                 ppCalculator.Mods = mapSearchResult.Mods?.WorkingMods.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries);
                 ppCalculator.Score = 1_000_000;
